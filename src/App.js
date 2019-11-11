@@ -42,6 +42,7 @@ class App extends Component {
             <List
               key={listItem.id}
               header={listItem.header}
+              cards={listItem.cardIds.map(id => store.allCards[id])}
             />
           ))}
         </section>
